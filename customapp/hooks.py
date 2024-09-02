@@ -145,6 +145,12 @@ app_license = "mit"
 # 	}
 # }
 
+doc_events = {
+    "Sales Order": {
+        "on_submit": "customapp.customapp.doctype.sales_order.sales_order.generate_qr_code"
+    }
+}
+
 # Scheduled Tasks
 # ---------------
 
